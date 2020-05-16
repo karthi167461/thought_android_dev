@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Taxiappz</string>
+    <string name="facebook_app_id" translatable="false">276966796008290</string>
+<!--    <string name="Map_key" translatable="false">AIzaSyB4J0s4oj5pN3O205RhWDnrSUjaSYrYA0I</string>-->
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="txt_NoInternet">Please Check Internet Connection</string>
+    <string name="Alert_title_Permission">Permission</string>
+    <string name="Alert_Msg_Location">Location and Phone State are mandatory permission please allow to access.  Are you sure you want to continue ?</string>
+    <string name="Txt_Continue">Continue</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="Txt_Exit">Exit</string>
+    <string name="txt_booking_page">Home</string>
+    <string name="track_your_memories_with_this_app">Track your memories with this App</string>
+    <string name="welcome_to_thoughtnote">Welcome to thoughtnote</string>
+    <string name="get_started">Get Started</string>
+    <string name="hi_welcome">Hi Welcome!</string>
+    <string name="login_here">Login Here</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="hint_name">Enter your username</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_phone">Enter your number</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="register_here">Register here</string>
+    <string name="login">Log In</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="please_reset_instructions">Please enter your email below to receive your password reset instructions</string>
+    <string name="txt_send_request">Send Request</string>
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="password_reset_instructions">Reset code was sent to your email. Please enter the code and creae new password</string>
+    <string name="reset_code">Reset code</string>
+    <string name="hint_reset_code">Enter your reset code</string>
+    <string name="new_password">New Password</string>
+    <string name="txt_confirm_password">Confirm password</string>
+    <string name="hint_confirm_password">"Enter your confirm password "</string>
+    <string name="change_password">Change password</string>
+    <string name="succesful">Succesful!</string>
+    <string name="loggin_in">loggin in.</string>
+
+</resources>

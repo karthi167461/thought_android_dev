@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="thoughtnote.com.ui.entry.getstarted.GetStartedFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_white">
+
+
+        <ImageView
+            android:id="@+id/welcome_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_180sdp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_welcome" />
+        <TextView
+            android:id="@+id/title_welcome"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="@string/welcome_to_thoughtnote"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/clr_black"
+            android:layout_centerHorizontal="true"
+            app:textfont="@{`PoppinsMedium.ttf`}"
+            android:layout_below="@+id/welcome_image"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/title_description"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/track_your_memories_with_this_app"
+            android:textSize="@dimen/_14sdp"
+            android:layout_centerHorizontal="true"
+            app:textfont="@{`PoppinsMedium.ttf`}"
+            android:layout_below="@+id/title_welcome"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_wave_bottom"
+            android:layout_height="@dimen/_180sdp">
+            <TextView
+                android:id="@+id/btn_getstarted"
+                android:textColor="@color/clr_black"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:text="@string/get_started"
+                android:clickable="true"
+                android:onClick="@{viewModel::onGetstarted}"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/curved_button_bg_gray"
+                android:textSize="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                app:textfont="@{`PoppinsSemiBold.ttf`}"/>
+            <TextView
+                android:layout_below="@+id/btn_getstarted"
+                android:textColor="@color/clr_white"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/login"
+                android:onClick="@{viewModel::onLogin}"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                app:textfont="@{`PoppinsSemiBold.ttf`}"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="thoughtnote.com.ui.entry.getstarted.GetStartedViewModel" />
+
+    </data>
+
+
+</layout>

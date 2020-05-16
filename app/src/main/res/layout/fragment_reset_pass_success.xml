@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_white"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_hand_phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/succesful"
+                android:textColor="@color/clr_black"
+                android:textSize="@dimen/_22sdp"
+                app:textfont="@{`PoppinsMedium.ttf`}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="You have succesfully change password. Please use your new passwords when"
+                android:textColor="@color/clr_gray_light2"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                app:textfont="@{`PoppinsSemiBold.ttf`}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loggin_in"
+                android:textColor="@color/clr_blue"
+                android:onClick="@{viewModel::onLogin}"
+                android:textSize="@dimen/_14sdp"
+                app:textfont="@{`PoppinsSemiBold.ttf`}" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="thoughtnote.com.ui.entry.resetPassSuccess.ResetPassSuccessViewModel" />
+
+    </data>
+
+
+</layout>

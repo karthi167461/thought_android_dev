@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="thoughtnote.com.ui.splash.SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_white">
+
+
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_above="@+id/img_bottom"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_logo_with_text" />
+
+        <ImageView
+            android:id="@+id/img_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/_18sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_smiles" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="thoughtnote.com.ui.splash.SplashViewModel" />
+
+    </data>
+
+
+</layout>

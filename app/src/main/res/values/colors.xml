@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="statusBarColor">#B9DCD9D9</color>
+    <color name="colorPrimary">#6C63FF</color>
+    <color name="colorPrimaryDark">#6C63FF</color>
+    <color name="colorAccent">#6C63FF</color>
+    <color name="clr_white">#FFFFFF</color>
+    <color name="while_light">#B9FFFFFF</color>
+    <color name="txtColor">#FFFFFF</color>
+    <color name="clr_black">#000000</color>
+    <color name="clr_blue">#6C63FF</color>
+    <color name="clr_blue_light">#AB6C63FF</color>
+    <color name="clr_black_light">#A3000000</color>
+    <color name="clr_gray_light">#D8D8D8</color>
+    <color name="clr_gray_light2">#9B9B9B</color>
+    <color name="txt_clr_blue">#6C63FF</color>
+    <color name="text_clr_black">#4A4956</color>
+    <color name="text_clr_black_light">#313131</color>
+
+</resources>

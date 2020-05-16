@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="thoughtnote.com.ui.entry.resetPass.ResetPassFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_white">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:onClick="@{viewModel::onForgotPass}"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_height="@dimen/_14sdp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/back_button"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/back_button"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/reset_password"
+                    android:textSize="@dimen/_22sdp"
+                    android:textColor="@color/clr_black"
+                    app:textfont="@{`PoppinsMedium.ttf`}"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/password_reset_instructions"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/clr_gray_light2"
+                    app:textfont="@{`PoppinsSemiBold.ttf`}"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/reset_code"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:textColor="@color/text_clr_black"
+                    app:textfont="@{`PoppinsMedium.ttf`}"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="@string/hint_reset_code"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/text_clr_black"
+                    app:textfont="@{`Poppins.ttf`}"
+                    android:backgroundTint="@color/clr_gray_light"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/new_password"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:textColor="@color/text_clr_black"
+                    app:textfont="@{`PoppinsMedium.ttf`}"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="@string/hint_password"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/text_clr_black"
+                    app:textfont="@{`Poppins.ttf`}"
+                    android:backgroundTint="@color/clr_gray_light"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/txt_confirm_password"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:textColor="@color/text_clr_black"
+                    app:textfont="@{`PoppinsMedium.ttf`}"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="@string/hint_confirm_password"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/text_clr_black"
+                    app:textfont="@{`Poppins.ttf`}"
+                    android:backgroundTint="@color/clr_gray_light"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/btn_getstarted"
+                    android:textColor="@color/clr_white"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/change_password"
+                    android:clickable="true"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:onClick="@{viewModel::onChangePass}"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/curved_button_bg_blue"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_height="wrap_content"
+                    app:textfont="@{`PoppinsMedium.ttf`}"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="thoughtnote.com.ui.entry.resetPass.ResetPassViewModel" />
+
+    </data>
+
+
+</layout>
